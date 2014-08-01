@@ -1,0 +1,9 @@
+#!/bin/sh
+
+LOCAL_DIR="$HOME"/.eagle
+mkdir -p "$LOCAL_DIR"
+cp -aru /opt/eagle6/* "$LOCAL_DIR"
+
+export LD_LIBRARY_PATH="$LOCAL_DIR/lib"
+exec "$LOCAL_DIR"/bin/eagle "$@"
+

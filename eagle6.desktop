@@ -1,0 +1,8 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=Cadsoft EAGLE 6
+TryExec=/usr/bin/eagle6
+Exec=/usr/bin/eagle6
+Icon=/opt/eagle6/bin/eagleicon50.png
+Categories=Development;
