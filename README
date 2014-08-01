@@ -3,7 +3,7 @@ Instructions for packaging Cadsoft Eagle 6 for Fedora 20:
     mkdir -p build/SOURCES
     spectool -g -C build/SOURCES eagle6.spec
     cp eagle6{,.desktop,.spec} build/SOURCES
-    rpmbuild --define "_topdir $(realpath build)" -ba eagle6.spec       
+    rpmbuild --define "_topdir $(realpath build)" -ba eagle6.spec
 
 Then  you can install the package with:
 
