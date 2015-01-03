@@ -1,4 +1,4 @@
-Instructions for packaging Cadsoft Eagle 6 for Fedora 20:
+Instructions for packaging Cadsoft Eagle 6 for Fedora 20/21:
 
     mkdir -p build/SOURCES
     spectool -g -C build/SOURCES eagle6.spec
@@ -7,10 +7,7 @@ Instructions for packaging Cadsoft Eagle 6 for Fedora 20:
 
 Then  you can install the package with:
 
-    sudo yum localinstall build/RPMS/x86_64/eagle6-6.6.0-1.fc20.x86_64.rpm
-
-Note: this is only my second Fedora package, I'm neither familiar
-with their packaging process nor policies.
+    sudo yum localinstall build/RPMS/x86_64/eagle6-6.6.0-1.fc*.x86_64.rpm
 
 Note: I named the package "eagle6" because while Eagle 6 is the
 version I need, it isn't the most recent version anymore since

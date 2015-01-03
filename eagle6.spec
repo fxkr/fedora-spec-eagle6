@@ -33,8 +33,8 @@ cp -a "%{_builddir}/eagle-%{version}" "%{buildroot}/opt/%{name}"
 chmod -R a-s "%{buildroot}/opt/%{name}"
 
 mkdir "%{buildroot}/opt/%{name}/lib"
-ln -s /usr/lib/libcrypto.so.1.0.1e "%{buildroot}/opt/%{name}/lib/libcrypto.so.1.0.0"
-ln -s /usr/lib/libssl.so.1.0.1e "%{buildroot}/opt/%{name}/lib/libssl.so.1.0.0"
+ln -s /usr/lib/libcrypto.so.10 "%{buildroot}/opt/%{name}/lib/libcrypto.so.1.0.0"
+ln -s /usr/lib/libssl.so.10 "%{buildroot}/opt/%{name}/lib/libssl.so.1.0.0"
 
 install -Dm755 "%{_sourcedir}/%{name}" "%{buildroot}%{_bindir}/%{name}"
 install -Dm644 "%{buildroot}/opt/%{name}/doc/eagle.1" "%{buildroot}%{_mandir}/man1/eagle.1"
